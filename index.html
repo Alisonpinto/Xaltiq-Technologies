@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Industry Alliance | Institutional Partnership</title>
+    <meta name="description"
+        content="Bridging the gap between academic theory and industrial reality through executive-led mentorship.">
+
+    <!-- Fonts: Inter for clean UI, Playfair Display for authoritative headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for standalone file) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0f172a', /* Deep Slate - Stability */
+                        'brand-primary': '#115e59', /* Deep Teal - Trust/Academia */
+                        'brand-accent': '#b45309', /* Muted Amber - Restrained Action */
+                        'brand-bg': '#f8fafc', /* Cool White */
+                        'brand-surface': '#ffffff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities for subtle textures */
+        .bg-grid-pattern {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%);
+        }
+
+        /* Scroll Animation Utilities */
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-slate-700 font-sans antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="w-full bg-white/90 backdrop-blur-md border-b border-slate-200 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center text-white">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Xaltiq <span
+                            class="text-brand-primary">Technologies</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#campus-to-corporate" class="hover:text-brand-primary transition-colors">Campus to
+                        Corporate</a>
+                    <a href="#problem" class="hover:text-brand-primary transition-colors">The Problem</a>
+                    <a href="#solution" class="hover:text-brand-primary transition-colors">Solution</a>
+                    <a href="#programs" class="hover:text-brand-primary transition-colors">Programs</a>
+                    <a href="#contact" class="hover:text-brand-primary transition-colors">Contact</a>
+                </div>
+                <a href="#contact"
+                    class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-brand-primary text-brand-primary text-sm font-medium rounded-sm hover:bg-brand-primary hover:text-white transition-all duration-300">
+                    Partner Access
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="campus-to-corporate" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
+        <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-on-scroll opacity-0 delay-100">
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-certificate"></i> Industry-Led Initiative
+                </div>
+                <h1 class="font-serif text-4xl lg:text-5xl font-bold text-brand-dark leading-tight mb-6">
+                    Preparing Graduates for <br>
+                    <span class="text-brand-primary italic">Real-World Industry</span>, <br>
+                    Not Just Employment
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+                    An industry-readiness initiative that helps students understand how real software projects work
+                    inside companies.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center px-8 py-3 bg-brand-primary text-white text-sm font-semibold rounded-sm shadow-soft hover:bg-teal-900 transition-all duration-300">
+                        Initiate Institutional Dialogue
+                    </a>
+                    <a href="#methodology"
+                        class="inline-flex items-center justify-center px-8 py-3 bg-white border border-slate-300 text-slate-700 text-sm font-semibold rounded-sm shadow-sm hover:bg-slate-50 transition-all duration-300">
+                        View Program Framework
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: The Problem -->
+    <section id="problem" class="py-20 bg-brand-bg border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">The Problem</h2>
+            </div>
+            <div class="flex flex-col gap-8 max-w-2xl mx-auto pb-20">
+                <!-- Block 1 -->
+                <div class="sticky top-24 bg-white p-8 rounded-lg border border-slate-200 shadow-card z-10">
+                    <h3 class="font-bold text-xl text-brand-primary mb-3">Academic Excellence</h3>
+                    <p class="text-slate-600">Graduates perform well academically, demonstrating strong theoretical
+                        knowledge and exam performance.</p>
+                </div>
+                <!-- Block 2 -->
+                <div class="sticky top-28 bg-brand-primary p-8 rounded-lg border border-brand-primary shadow-card z-20">
+                    <h3 class="font-bold text-xl text-white mb-3">First-Year Struggle</h3>
+                    <p class="text-teal-50">Despite good grades, many struggle in their first year of work due to lack
+                        of practical exposure.</p>
+                </div>
+                <!-- Block 3 -->
+                <div class="sticky top-32 bg-white p-8 rounded-lg border border-slate-200 shadow-card z-30">
+                    <h3 class="font-bold text-xl text-brand-primary mb-3">Execution Readiness Gap</h3>
+                    <p class="text-slate-600">Employers report significant gaps in execution readiness, requiring
+                        extensive retraining.</p>
+                </div>
+                <!-- Block 4 -->
+                <div class="sticky top-36 bg-brand-primary p-8 rounded-lg border border-brand-primary shadow-card z-40">
+                    <h3 class="font-bold text-xl text-white mb-3">Institutional Accountability</h3>
+                    <p class="text-teal-50">Universities are increasingly judged by workplace outcomes rather than
+                        just academic results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Gap Analysis -->
+    <section id="gap" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">The Gap</h2>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+
+                <!-- Academic Reality (Left) -->
+                <div
+                    class="md:col-span-5 bg-slate-50 p-8 rounded-sm border border-slate-200 animate-on-scroll opacity-0 delay-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-slate-400"></i>
+                        <h3 class="font-bold text-slate-700">Academic Reality</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-code text-sm mt-1 text-slate-400"></i>
+                            <span class="text-sm text-slate-600">Academia teaches what to build</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-file-pen text-sm mt-1 text-slate-400"></i>
+                            <span class="text-sm text-slate-600">Academic tasks have clear instructions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-user text-sm mt-1 text-slate-400"></i>
+                            <span class="text-sm text-slate-600">Academic work ends at submission</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- The Bridge Icon -->
+                <div class="md:col-span-2 flex justify-center py-4 md:py-0 animate-on-scroll opacity-0 delay-200">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary">
+                        <i class="fa-solid fa-arrow-right-long md:hidden"></i>
+                        <i class="fa-solid fa-arrow-right-long hidden md:block text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Industry Expectation (Right) -->
+                <div
+                    class="md:col-span-5 bg-brand-primary text-white p-8 rounded-sm shadow-lg relative overflow-hidden animate-on-scroll opacity-0 delay-300">
+                    <!-- Subtle background decoration -->
+                    <i class="fa-solid fa-building absolute -bottom-4 -right-4 text-9xl text-teal-700 opacity-20"></i>
+
+                    <div class="flex items-center gap-3 mb-6 relative z-10">
+                        <i class="fa-solid fa-briefcase text-2xl text-teal-200"></i>
+                        <h3 class="font-bold text-white">Industry Expectation</h3>
+                    </div>
+                    <ul class="space-y-4 relative z-10">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-sm mt-1 text-teal-300"></i>
+                            <span class="text-sm text-teal-50">Industry expects how to deliver</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-sm mt-1 text-teal-300"></i>
+                            <span class="text-sm text-teal-50">Real projects start with uncertainty</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-sm mt-1 text-teal-300"></i>
+                            <span class="text-sm text-teal-50">Industry work continues after delivery</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section id="solution" class="py-20 bg-brand-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl font-bold text-brand-dark mb-8 animate-on-scroll opacity-0 delay-100">The
+                Solution – Campus to Corporate</h2>
+            <div
+                class="bg-white p-8 rounded-sm border border-slate-200 shadow-soft animate-on-scroll opacity-0 delay-200">
+                <ul class="space-y-4 text-left inline-block">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brand-primary"></i>
+                        <span class="text-slate-700">Not a training course</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brand-primary"></i>
+                        <span class="text-slate-700">Focused on industry exposure and execution understanding</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brand-primary"></i>
+                        <span class="text-slate-700">Complements academic education</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-brand-primary"></i>
+                        <span class="text-slate-700">Builds clarity on how real work happens in organizations</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Students Gain -->
+    <section id="benefits" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl font-bold text-brand-dark text-center mb-12">What Students Gain</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+                <div class="text-center p-4 animate-on-scroll opacity-0 delay-100">
+                    <i class="fa-solid fa-lightbulb text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-bold text-slate-800 mb-2">Industry Project Understanding</h3>
+                    <p class="text-xs text-slate-500">Clear understanding of how industry projects work</p>
+                </div>
+                <div class="text-center p-4 animate-on-scroll opacity-0 delay-200">
+                    <i class="fa-solid fa-eye text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-bold text-slate-800 mb-2">Realistic Expectations</h3>
+                    <p class="text-xs text-slate-500">Realistic expectations before employment</p>
+                </div>
+                <div class="text-center p-4 animate-on-scroll opacity-0 delay-300">
+                    <i class="fa-solid fa-user-shield text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-bold text-slate-800 mb-2">Corporate Confidence</h3>
+                    <p class="text-xs text-slate-500">Higher confidence in corporate environments</p>
+                </div>
+                <div class="text-center p-4 animate-on-scroll opacity-0 delay-400">
+                    <i class="fa-solid fa-rocket text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-bold text-slate-800 mb-2">Faster Adaptation</h3>
+                    <p class="text-xs text-slate-500">Faster adaptation during the first year of work</p>
+                </div>
+                <div class="text-center p-4 animate-on-scroll opacity-0 delay-500">
+                    <!-- Using delay-400 equivalent or just sticking to 400 since only 4 defined classes, but I defined up to 400. I'll just reuse 400 or add style. Let's reuse 400 or just let it default. Wait, I only defined delay-400. I'll use delay-400 for the last one too or add delay-500 in style line 93? I will just use delay-400 for the 5th one or add delay-500. Let's stick to 400 for simplicity or add style. I'll use delay-400 for both last items or stagger them slightly by adding style inline? No, inline style is messy. I will just use delay-400 for the last one as well. -->
+                    <i class="fa-solid fa-id-badge text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-bold text-slate-800 mb-2">Role Clarity</h3>
+                    <p class="text-xs text-slate-500">Better understanding of roles, responsibility, and accountability
+                    </p>
+                </div>
+            </div>
+            <div class="text-center font-serif text-xl font-bold text-brand-dark animate-on-scroll opacity-0 delay-300">
+                Overall Impact: Students transition from academic mindsets to industry-ready professionals with clarity,
+                confidence, and practical execution understanding.
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Formats -->
+    <section id="programs" class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl font-bold text-brand-dark text-center mb-12">Program Formats</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-8 rounded-sm border border-slate-200 shadow-md animate-on-scroll opacity-0 delay-100">
+                    <h3 class="font-bold text-xl text-brand-primary mb-2">Industry Reality Session</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Duration: 2 Hours</p>
+                    <ul class="space-y-2 mb-6 text-slate-600 list-disc list-inside">
+                        <li>Project initiation and approvals</li>
+                        <li>Architecture thinking</li>
+                        <li>Team collaboration dynamics</li>
+                    </ul>
+                    <div class="bg-slate-50 p-4 rounded-sm border-l-4 border-brand-accent">
+                        <span class="font-bold text-slate-800">Outcome:</span> Clarity on end-to-end industry
+                        functioning
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-8 rounded-sm border border-slate-200 shadow-md animate-on-scroll opacity-0 delay-300">
+                    <h3 class="font-bold text-xl text-brand-primary mb-2">Industry Immersion Workshop</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-4">Duration: 3–5 Days</p>
+                    <ul class="space-y-2 mb-6 text-slate-600 list-disc list-inside">
+                        <li>Planning through execution</li>
+                        <li>Requirement finalization</li>
+                        <li>Iterations and post-delivery work</li>
+                    </ul>
+                    <p class="text-sm text-slate-500 mb-4 italic">Example: Enterprise Import/Export Business Management
+                        app</p>
+                    <div class="bg-slate-50 p-4 rounded-sm border-l-4 border-brand-accent">
+                        <span class="font-bold text-slate-800">Outcome:</span> Insight into real delivery and execution
+                        expectations
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Leads & Governance -->
+    <section id="governance" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Abstract Decoration -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-slate-800 skew-x-12 opacity-50 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="font-serif text-3xl font-bold mb-12 text-center animate-on-scroll opacity-0 delay-100">Who Leads
+                & Governs</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Profile Block -->
+                <div class="flex flex-col items-center text-center animate-on-scroll opacity-0 delay-200">
+                    <div
+                        class="w-24 h-24 bg-slate-700 rounded-full flex items-center justify-center text-brand-primary mb-6 ring-4 ring-slate-800">
+                        <img src="images/e25958a7-8bab-457e-bf94-0213e3511593.png" alt="Ankit Gangrade"
+                            class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Ankit Gangrade</h3>
+                    <p class="text-brand-accent text-sm font-semibold uppercase tracking-wide mb-4">Industry Educator &
+                        Corporate Trainer</p>
+                    <div class="max-w-xs mx-auto">
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed text-justify">
+                            I’m Ankit Gangrade, an OutSystems Architect and Trainer from India with 12+ years of
+                            experience building
+                            enterprise-grade applications. I specialize in mentoring developers and designing
+                            high-impact, scalable
+                            low-code solutions.
+                        </p>
+                    </div>
+                </div>
+                <!-- Organization Block -->
+                <div class="flex flex-col items-center text-center animate-on-scroll opacity-0 delay-300">
+                    <div
+                        class="w-24 h-24 bg-slate-700 rounded-full flex items-center justify-center text-brand-primary mb-6 ring-4 ring-slate-800">
+                        <img src="images/e25958a7-8bab-457e-bf94-0213e3511593.png" alt="Xaltiq Technologies"
+                            class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Xaltiq Technologies</h3>
+                    <p class="text-brand-accent text-sm font-semibold uppercase tracking-wide mb-4">Technology Partner
+                    </p>
+                    <div class="max-w-xs mx-auto">
+                        <p class="text-slate-400 text-sm font-medium leading-relaxed text-justify">
+                            Xaltiq Technologies partners as the technology backbone of the program, ensuring strong
+                            governance,
+                            seamless academic coordination, and consistent delivery standards. The partnership is
+                            designed to scale efficiently, enabling long-term growth, quality assurance, and sustainable
+                            collaboration across institutions and industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For -->
+    <section id="audience" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="font-serif text-3xl font-bold text-brand-dark mb-12 text-center animate-on-scroll opacity-0 delay-100">
+                Who This Is For</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div
+                    class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-200 -z-10 transform -translate-y-1/2">
+                </div>
+
+                <!-- Item 1 -->
+                <div
+                    class="bg-white p-6 rounded-lg text-center shadow-card border border-slate-100 relative group hover:-translate-y-2 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-400 animate-on-scroll opacity-0 delay-100">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-4 ring-8 ring-white z-10 relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                        <i class="fa-solid fa-building-columns text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Universities & Colleges</h3>
+                </div>
+
+                <!-- Item 2 -->
+                <div
+                    class="bg-white p-6 rounded-lg text-center shadow-card border border-slate-100 relative group hover:-translate-y-2 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-400 animate-on-scroll opacity-0 delay-200">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-4 ring-8 ring-white z-10 relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">International Academic Institutions</h3>
+                </div>
+
+                <!-- Item 3 -->
+                <div
+                    class="bg-white p-6 rounded-lg text-center shadow-card border border-slate-100 relative group hover:-translate-y-2 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-400 animate-on-scroll opacity-0 delay-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-4 ring-8 ring-white z-10 relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                        <i class="fa-solid fa-briefcase text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Career Development & Placement Cells</h3>
+                </div>
+
+                <!-- Item 4 -->
+                <div
+                    class="bg-white p-6 rounded-lg text-center shadow-card border border-slate-100 relative group hover:-translate-y-2 hover:shadow-xl hover:border-brand-primary/30 transition-all duration-400 animate-on-scroll opacity-0 delay-400">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-4 ring-8 ring-white z-10 relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+                        <i class="fa-solid fa-rocket text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Institutions focused on industry-ready graduates
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Lead Gen -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="relative bg-gradient-to-br from-brand-primary to-slate-900 rounded-2xl p-12 md:p-16 text-center overflow-hidden shadow-2xl animate-on-scroll opacity-0 delay-100">
+                <!-- Decorative Background Elements -->
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-teal-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-brand-accent rounded-full mix-blend-overlay filter blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2">
+                </div>
+
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm mb-6 ring-1 ring-white/20">
+                        <i class="fa-solid fa-handshake text-3xl text-teal-200"></i>
+                    </div>
+
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Ready to Bridge the <br />
+                        <span class="text-teal-200">Academic-Industry Gap</span>?
+                    </h2>
+
+                    <p class="text-teal-50/90 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+                        Join the initiative to transform engineering education. Let's discuss how we can bring
+                        real-world software execution to your campus.
+                    </p>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <span class="text-teal-200 text-sm font-semibold uppercase tracking-wider">For academic
+                            partnerships:</span>
+                        <a href="mailto:initiative@xaltiq.com"
+                            class="group relative inline-flex items-center gap-3 px-10 py-5 bg-white text-brand-primary font-bold text-xl rounded-full shadow-lg hover:bg-teal-50 hover:scale-105 transition-all duration-300">
+                            <i
+                                class="fa-solid fa-envelope text-brand-accent group-hover:rotate-12 transition-transform"></i>
+                            <span>initiative@xaltiq.com</span>
+                            <div
+                                class="absolute inset-0 rounded-full ring-4 ring-white/30 group-hover:ring-white/50 transition-all">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-slate-800 rounded-sm flex items-center justify-center text-white text-xs">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <span class="font-serif font-bold text-slate-800">Xaltiq <span
+                        class="text-brand-primary">Technologies</span></span>
+            </div>
+
+            <div class="text-slate-500 text-sm">
+                &copy; 2025. Built with Xaltiq Technologies
+            </div>
+
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                        class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                        class="fa-solid fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0');
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>
