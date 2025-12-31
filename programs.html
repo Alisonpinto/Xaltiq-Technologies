@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexpo - Program Framework | Campus to Corporate</title>
+    <meta name="description"
+        content="Industry Immersion Program case study: Building enterprise import/export solutions in real-world conditions.">
+
+    <!-- Fonts: Inter for clean UI, Playfair Display for authoritative headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for standalone file) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0f172a',
+                        'brand-primary': '#115e59',
+                        'brand-accent': '#b45309',
+                        'brand-bg': '#f8fafc',
+                        'brand-surface': '#ffffff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid-pattern {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%);
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        /* Process Flow Animation */
+        @keyframes pulse-subtle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        .pulse-subtle {
+            animation: pulse-subtle 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-slate-700 font-sans antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="w-full bg-white/90 backdrop-blur-md border-b border-slate-200 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center text-white">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Xaltiq <span
+                            class="text-brand-primary">Technologies</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="index.html#campus-to-corporate" class="hover:text-brand-primary transition-colors">Home</a>
+                    <a href="#challenge" class="hover:text-brand-primary transition-colors">Challenge</a>
+                    <a href="#architecture" class="hover:text-brand-primary transition-colors">Architecture</a>
+                    <a href="#outcomes" class="hover:text-brand-primary transition-colors">Outcomes</a>
+                    <a href="index.html#contact" class="hover:text-brand-primary transition-colors">Contact</a>
+                </div>
+                <a href="index.html#contact"
+                    class="hidden md:inline-flex items-center justify-center px-6 py-2 border border-brand-primary text-brand-primary text-sm font-medium rounded-sm hover:bg-brand-primary hover:text-white transition-all duration-300">
+                    Partner Access
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
+        <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-on-scroll opacity-0 delay-100">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-ship"></i> Case Study
+                </div>
+                <h1 class="font-serif text-4xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
+                    Dexpo
+                </h1>
+                <p class="text-2xl font-serif italic text-brand-primary mb-6">
+                    Enterprise Import/Export Business Operations Platform
+                </p>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    A comprehensive project showcase from the Industry Immersion Program, demonstrating real-world enterprise application development, stakeholder management, and technical decision-making.
+                </p>
+                <a href="#challenge"
+                    class="inline-flex items-center justify-center px-8 py-3 bg-brand-primary text-white text-sm font-semibold rounded-sm shadow-soft hover:bg-teal-900 transition-all duration-300">
+                    Explore the Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Challenge - Infographic Style -->
+    <section id="challenge" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">The Business Challenge</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Import/export businesses face critical operational challenges that impact efficiency, compliance, and profitability.</p>
+            </div>
+
+            <!-- Visual Grid of Challenges -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Challenge 1 -->
+                <div class="relative group animate-on-scroll opacity-0 delay-100">
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-lg border-2 border-red-200 text-center h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="w-20 h-20 bg-red-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-puzzle-piece text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-red-900 mb-2">Fragmented Data</h3>
+                        <p class="text-sm text-red-700">Scattered across disconnected systems</p>
+                    </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="relative group animate-on-scroll opacity-0 delay-200">
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-lg border-2 border-orange-200 text-center h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="w-20 h-20 bg-orange-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-hand-pointer text-3xl text-orange-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-orange-900 mb-2">Manual Coordination</h3>
+                        <p class="text-sm text-orange-700">Time-consuming manual processes</p>
+                    </div>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="relative group animate-on-scroll opacity-0 delay-300">
+                    <div class="bg-gradient-to-br from-amber-50 to-amber-100 p-8 rounded-lg border-2 border-amber-200 text-center h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="w-20 h-20 bg-amber-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-hourglass-half text-3xl text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-amber-900 mb-2">Operational Delays</h3>
+                        <p class="text-sm text-amber-700">Frequent bottlenecks and delays</p>
+                    </div>
+                </div>
+
+                <!-- Challenge 4 -->
+                <div class="relative group animate-on-scroll opacity-0 delay-400">
+                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-lg border-2 border-yellow-200 text-center h-full flex flex-col items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="w-20 h-20 bg-yellow-200 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-eye-slash text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-yellow-900 mb-2">Lack of Visibility</h3>
+                        <p class="text-sm text-yellow-700">Limited real-time insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Context - Visual Timeline -->
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold mb-4">Real-World Project Context</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">Authentic enterprise conditions with real challenges and constraints</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connecting Line -->
+                <div class="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-brand-accent via-brand-primary to-brand-accent opacity-30"></div>
+
+                <!-- Context 1 -->
+                <div class="relative animate-on-scroll opacity-0 delay-100">
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 text-center relative z-10 hover:bg-slate-750 transition-all duration-300">
+                        <div class="w-16 h-16 bg-brand-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 ring-4 ring-slate-800">
+                            <i class="fa-solid fa-question text-2xl text-brand-accent"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Vague Requirements</h3>
+                        <p class="text-slate-400 text-sm">Intentionally ambiguous brief requiring active stakeholder engagement</p>
+                    </div>
+                </div>
+
+                <!-- Context 2 -->
+                <div class="relative animate-on-scroll opacity-0 delay-200">
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 text-center relative z-10 hover:bg-slate-750 transition-all duration-300">
+                        <div class="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 ring-4 ring-slate-800">
+                            <i class="fa-solid fa-clock text-2xl text-brand-primary"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Business Pressures</h3>
+                        <p class="text-slate-400 text-sm">Tight deadlines balancing speed, quality, and business value</p>
+                    </div>
+                </div>
+
+                <!-- Context 3 -->
+                <div class="relative animate-on-scroll opacity-0 delay-300">
+                    <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 text-center relative z-10 hover:bg-slate-750 transition-all duration-300">
+                        <div class="w-16 h-16 bg-teal-500/20 rounded-full flex items-center justify-center mx-auto mb-6 ring-4 ring-slate-800">
+                            <i class="fa-solid fa-users text-2xl text-teal-400"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Stakeholder Conflicts</h3>
+                        <p class="text-slate-400 text-sm">Multiple priorities requiring negotiation and compromise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture & Data Modeling - Process Flow -->
+    <section id="architecture" class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Architecture & Data Modeling</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Strategic technical decisions shaping the platform's foundation</p>
+            </div>
+
+            <!-- Vertical Flow Chart -->
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Decision 1 -->
+                <div class="relative animate-on-scroll opacity-0 delay-100">
+                    <div class="bg-white p-6 rounded-lg shadow-card border-l-4 border-brand-primary">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-cubes text-xl text-brand-primary"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg text-slate-900 mb-2">Modular vs Monolithic</h3>
+                                <p class="text-sm text-slate-600 mb-3">Evaluated architectural patterns for maintainability</p>
+                                <div class="bg-teal-50 p-3 rounded border-l-2 border-brand-primary">
+                                    <span class="text-xs font-semibold text-brand-primary">→ DECISION:</span>
+                                    <p class="text-sm text-slate-700 mt-1">Modular approach with clear domain boundaries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-4">
+                        <i class="fa-solid fa-arrow-down text-2xl text-slate-300 pulse-subtle"></i>
+                    </div>
+                </div>
+
+                <!-- Decision 2 -->
+                <div class="relative animate-on-scroll opacity-0 delay-200">
+                    <div class="bg-white p-6 rounded-lg shadow-card border-l-4 border-brand-accent">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-database text-xl text-brand-accent"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg text-slate-900 mb-2">Data Modeling</h3>
+                                <p class="text-sm text-slate-600 mb-3">Normalized structures for complex relationships</p>
+                                <div class="bg-amber-50 p-3 rounded border-l-2 border-brand-accent">
+                                    <span class="text-xs font-semibold text-brand-accent">→ DECISION:</span>
+                                    <p class="text-sm text-slate-700 mt-1">Flexible schemas maintaining data integrity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center my-4">
+                        <i class="fa-solid fa-arrow-down text-2xl text-slate-300 pulse-subtle"></i>
+                    </div>
+                </div>
+
+                <!-- Decision 3 -->
+                <div class="relative animate-on-scroll opacity-0 delay-300">
+                    <div class="bg-white p-6 rounded-lg shadow-card border-l-4 border-teal-600">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-chart-line text-xl text-teal-600"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg text-slate-900 mb-2">Scalability Planning</h3>
+                                <p class="text-sm text-slate-600 mb-3">Performance for increasing transaction volumes</p>
+                                <div class="bg-teal-50 p-3 rounded border-l-2 border-teal-600">
+                                    <span class="text-xs font-semibold text-teal-600">→ DECISION:</span>
+                                    <p class="text-sm text-slate-700 mt-1">Caching strategies and optimized queries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation - Visual Workflow -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Implementation on Low-Code Platform</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Balancing rapid delivery with enterprise-grade functionality</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <!-- Stage 1 -->
+                <div class="text-center animate-on-scroll opacity-0 delay-100">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-rocket text-4xl text-blue-600"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold">1</div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Rapid Development</h3>
+                    <p class="text-sm text-slate-600">Accelerated cycles for quick stakeholder feedback</p>
+                </div>
+
+                <!-- Arrow -->
+                <div class="hidden md:flex justify-center">
+                    <i class="fa-solid fa-arrow-right text-3xl text-slate-300"></i>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="text-center animate-on-scroll opacity-0 delay-200">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-gears text-4xl text-purple-600"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold">2</div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 mb-2">Business Rules</h3>
+                    <p class="text-sm text-slate-600">Complex logic for compliance and automation</p>
+                </div>
+
+                <!-- Continue arrow for mobile -->
+                <div class="md:hidden flex justify-center my-4">
+                    <i class="fa-solid fa-arrow-down text-3xl text-slate-300"></i>
+                </div>
+            </div>
+
+            <!-- Stage 3 - Full Width -->
+            <div class="text-center mt-12 animate-on-scroll opacity-0 delay-300">
+                <div class="relative inline-block mb-6">
+                    <div class="w-32 h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-rotate text-4xl text-green-600"></i>
+                    </div>
+                    <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold">3</div>
+                </div>
+                <h3 class="font-bold text-xl text-slate-900 mb-2">Iteration Cycles</h3>
+                <p class="text-sm text-slate-600 max-w-md mx-auto">Agile methodology adapting to evolving requirements</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Challenges - Card Grid -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Delivery Challenges</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Real-world obstacles that shaped valuable learning experiences</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Challenge 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-card hover:shadow-xl transition-all duration-300 animate-on-scroll opacity-0 delay-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-balance-scale text-xl text-red-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Technical Trade-offs</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Balancing ideal solutions with practical constraints</p>
+                    <div class="bg-teal-50 p-4 rounded-lg border-l-4 border-brand-primary">
+                        <p class="text-xs font-semibold text-brand-primary mb-1">KEY LEARNING</p>
+                        <p class="text-sm text-slate-700">Prioritize features based on business value</p>
+                    </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-card hover:shadow-xl transition-all duration-300 animate-on-scroll opacity-0 delay-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-comments text-xl text-orange-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Communication Gaps</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Bridging technical and business perspectives</p>
+                    <div class="bg-teal-50 p-4 rounded-lg border-l-4 border-brand-primary">
+                        <p class="text-xs font-semibold text-brand-primary mb-1">KEY LEARNING</p>
+                        <p class="text-sm text-slate-700">Translate technical concepts to business language</p>
+                    </div>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-card hover:shadow-xl transition-all duration-300 animate-on-scroll opacity-0 delay-300">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-triangle-exclamation text-xl text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Project Realism</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Navigating messy reality of enterprise projects</p>
+                    <div class="bg-teal-50 p-4 rounded-lg border-l-4 border-brand-primary">
+                        <p class="text-xs font-semibold text-brand-primary mb-1">KEY LEARNING</p>
+                        <p class="text-sm text-slate-700">Deliver value incrementally while maintaining quality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Outcomes - Icon Grid -->
+    <section id="outcomes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Learning Outcomes</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Key insights and professional skills developed through the program</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Outcome 1 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-100">
+                    <div class="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-brain text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Industry Professional Thinking</p>
+                </div>
+
+                <!-- Outcome 2 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-200">
+                    <div class="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-code-branch text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Business to Technical Translation</p>
+                </div>
+
+                <!-- Outcome 3 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-300">
+                    <div class="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-handshake text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Stakeholder Management</p>
+                </div>
+
+                <!-- Outcome 4 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-400">
+                    <div class="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-compass text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Working Within Constraints</p>
+                </div>
+
+                <!-- Outcome 5 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-100">
+                    <div class="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-repeat text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Iterative Development</p>
+                </div>
+
+                <!-- Outcome 6 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-200">
+                    <div class="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-building text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Pragmatic Architecture</p>
+                </div>
+
+                <!-- Outcome 7 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-300">
+                    <div class="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-sitemap text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Enterprise Complexity</p>
+                </div>
+
+                <!-- Outcome 8 -->
+                <div class="bg-gradient-to-br from-brand-bg to-white p-6 rounded-lg border border-slate-200 text-center hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-400">
+                    <div class="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-arrow-trend-up text-2xl text-white"></i>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-800">Scalability & Maintainability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-brand-primary relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm mb-6 ring-1 ring-white/20 animate-on-scroll opacity-0 delay-100">
+                <i class="fa-solid fa-ship text-3xl text-teal-200"></i>
+            </div>
+            
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll opacity-0 delay-200">
+                Explore Industry Projects with Dexpo
+            </h2>
+            
+            <p class="text-teal-50 text-lg mb-10 max-w-2xl mx-auto animate-on-scroll opacity-0 delay-300">
+                Discover how real-world enterprise applications are built, from initial requirements to final delivery, complete with the challenges and trade-offs that define professional software development.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll opacity-0 delay-400">
+                <a href="index.html#programs"
+                    class="inline-flex items-center justify-center px-8 py-3 bg-white text-brand-primary text-sm font-semibold rounded-sm shadow-lg hover:bg-teal-50 transition-all duration-300">
+                    Learn More About the Program
+                </a>
+                <a href="index.html#contact"
+                    class="inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-white text-white text-sm font-semibold rounded-sm hover:bg-white hover:text-brand-primary transition-all duration-300">
+                    View Project Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-slate-800 rounded-sm flex items-center justify-center text-white text-xs">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+                <span class="font-serif font-bold text-slate-800">Xaltiq <span class="text-brand-primary">Technologies</span></span>
+            </a>
+
+            <div class="text-slate-500 text-sm">
+                &copy; 2025. Built with Xaltiq Technologies
+            </div>
+
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-brand-primary transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="index.html#contact" class="text-slate-400 hover:text-brand-primary transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0');
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+
+</html>
