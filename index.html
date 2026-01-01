@@ -104,20 +104,40 @@
     <nav class="w-full bg-white/90 backdrop-blur-md border-b border-slate-200 fixed top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="index.html"><div class="flex items-center gap-3">
-                    <div class="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center text-white">
-                        <i class="fa-solid fa-landmark"></i>
+                <a href="index.html">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-brand-primary rounded-sm flex items-center justify-center text-white">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Campus To <span
+                                class="text-brand-primary">Corporate</span></span>
                     </div>
-                    <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Campus To <span
-                            class="text-brand-primary">Corporate</span></span>
-                </div></a>
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-slate-600 hover:text-brand-primary focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
                 <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                     <a href="#problem" class="hover:text-brand-primary transition-colors">The Problem</a>
                     <a href="#solution" class="hover:text-brand-primary transition-colors">Solution</a>
                     <a href="#programs" class="hover:text-brand-primary transition-colors">Programs</a>
                     <a href="contact.html" class="hover:text-brand-primary transition-colors">Contact</a>
                 </div>
-                
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200">
+            <div class="px-4 pt-4 pb-6 space-y-4">
+                <a href="#problem" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">The Problem</a>
+                <a href="#solution" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Solution</a>
+                <a href="#programs" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Programs</a>
+                <a href="contact.html" class="block text-brand-primary font-bold" onclick="toggleMenu()">Contact</a>
             </div>
         </div>
     </nav>
@@ -662,7 +682,8 @@
             </div>
 
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/ankitgdotin/" class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                <a href="https://www.linkedin.com/in/ankitgdotin/"
+                    class="text-slate-400 hover:text-brand-primary transition-colors"><i
                         class="fa-brands fa-linkedin text-xl"></i></a>
                 <a href="mailto:initiative@xaltiq.com"
                     class="text-slate-400 hover:text-brand-primary transition-colors"><i
@@ -695,6 +716,25 @@
         });
     </script>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btnIcon = document.querySelector('#mobile-menu-btn i');
+
+            menu.classList.toggle('hidden');
+
+            if (menu.classList.contains('hidden')) {
+                btnIcon.classList.remove('fa-xmark');
+                btnIcon.classList.add('fa-bars');
+            } else {
+                btnIcon.classList.remove('fa-bars');
+                btnIcon.classList.add('fa-xmark');
+            }
+        }
+
+        // Close menu if clicked outside? Optional but good for UX. kept simple as requested.
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMenu);
+    </script>
 </body>
 
 </html>

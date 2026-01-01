@@ -126,6 +126,12 @@
                     <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Campus To <span
                             class="text-brand-primary">Corporate</span></span>
                 </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-slate-600 hover:text-brand-primary focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
                 <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                     <a href="index.html#campus-to-corporate" class="hover:text-brand-primary transition-colors">Home</a>
                     <a href="#challenge" class="hover:text-brand-primary transition-colors">Challenge</a>
@@ -133,8 +139,24 @@
                     <a href="#outcomes" class="hover:text-brand-primary transition-colors">Outcomes</a>
                     <a href="index.html#contact" class="hover:text-brand-primary transition-colors">Contact</a>
                 </div>
-                
             </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200">
+            <div class="px-4 pt-4 pb-6 space-y-4">
+                <a href="index.html#campus-to-corporate"
+                    class="block text-slate-600 hover:text-brand-primary font-medium" onclick="toggleMenu()">Home</a>
+                <a href="#challenge" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Challenge</a>
+                <a href="#architecture" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Architecture</a>
+                <a href="#outcomes" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Outcomes</a>
+                <a href="index.html#contact" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
         </div>
     </nav>
 
@@ -643,7 +665,8 @@
             </div>
 
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/ankitgdotin/" class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                <a href="https://www.linkedin.com/in/ankitgdotin/"
+                    class="text-slate-400 hover:text-brand-primary transition-colors"><i
                         class="fa-brands fa-linkedin text-xl"></i></a>
                 <a href="mailto:initiative@xaltiq.com"
                     class="text-slate-400 hover:text-brand-primary transition-colors"><i
@@ -676,6 +699,24 @@
         });
     </script>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btnIcon = document.querySelector('#mobile-menu-btn i');
+
+            menu.classList.toggle('hidden');
+
+            if (menu.classList.contains('hidden')) {
+                btnIcon.classList.remove('fa-xmark');
+                btnIcon.classList.add('fa-bars');
+            } else {
+                btnIcon.classList.remove('fa-bars');
+                btnIcon.classList.add('fa-xmark');
+            }
+        }
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMenu);
+    </script>
 </body>
 
 </html>

@@ -103,9 +103,12 @@
 
         /* Success animation */
         @keyframes successPulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.05);
             }
@@ -130,6 +133,12 @@
                     <span class="font-serif text-xl font-bold text-slate-800 tracking-tight">Campus To<span
                             class="text-brand-primary">Corporate</span></span>
                 </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-slate-600 hover:text-brand-primary focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
                 <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                     <a href="index.html#campus-to-corporate" class="hover:text-brand-primary transition-colors">Home</a>
                     <a href="index.html#problem" class="hover:text-brand-primary transition-colors">The Problem</a>
@@ -139,22 +148,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200">
+            <div class="px-4 pt-4 pb-6 space-y-4">
+                <a href="index.html#campus-to-corporate"
+                    class="block text-slate-600 hover:text-brand-primary font-medium" onclick="toggleMenu()">Home</a>
+                <a href="index.html#problem" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">The Problem</a>
+                <a href="index.html#solution" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Solution</a>
+                <a href="index.html#programs" class="block text-slate-600 hover:text-brand-primary font-medium"
+                    onclick="toggleMenu()">Programs</a>
+                <a href="contact.html" class="block text-brand-primary font-bold" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
         <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-on-scroll opacity-0 delay-100">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-on-scroll opacity-0 delay-100">
             <div class="max-w-4xl mx-auto">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-6">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-6">
                     <i class="fa-solid fa-paper-plane"></i> Let's Connect
                 </div>
                 <h1 class="font-serif text-4xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
                     Contact Us
                 </h1>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Ready to bring real-world industry readiness to your institution? We're here to discuss how our programs can transform your students' career trajectories.
+                    Ready to bring real-world industry readiness to your institution? We're here to discuss how our
+                    programs can transform your students' career trajectories.
                 </p>
             </div>
         </div>
@@ -165,8 +193,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <!-- Email -->
-                <div class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-100">
-                    <div class="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div
+                    class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-100">
+                    <div
+                        class="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-envelope text-2xl text-brand-primary"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Email Us</h3>
@@ -177,8 +207,10 @@
                 </div>
 
                 <!-- Phone -->
-                <div class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-200">
-                    <div class="w-16 h-16 bg-brand-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div
+                    class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-200">
+                    <div
+                        class="w-16 h-16 bg-brand-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-phone text-2xl text-brand-accent"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Call Us</h3>
@@ -189,7 +221,8 @@
                 </div>
 
                 <!-- Location -->
-                <div class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-300">
+                <div
+                    class="text-center p-8 bg-gradient-to-br from-brand-bg to-white rounded-lg border border-slate-200 hover:shadow-lg transition-all duration-300 animate-on-scroll opacity-0 delay-300">
                     <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-location-dot text-2xl text-teal-600"></i>
                     </div>
@@ -208,7 +241,8 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 animate-on-scroll opacity-0 delay-100">
                 <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Send Us a Message</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">Fill out the form below and we'll get back to you within 24-48 hours.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto">Fill out the form below and we'll get back to you within
+                    24-48 hours.</p>
             </div>
 
             <div class="bg-white rounded-2xl shadow-card p-8 md:p-12 animate-on-scroll opacity-0 delay-200">
@@ -220,11 +254,7 @@
                             <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">
                                 Full Name <span class="text-red-500">*</span>
                             </label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                required
+                            <input type="text" id="name" name="name" required
                                 class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 transition-all duration-200"
                                 placeholder="full name">
                         </div>
@@ -234,11 +264,7 @@
                             <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">
                                 Email Address <span class="text-red-500">*</span>
                             </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
+                            <input type="email" id="email" name="email" required
                                 class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 transition-all duration-200"
                                 placeholder="xyz@gmail.com">
                         </div>
@@ -251,10 +277,7 @@
                             <label for="phone" class="block text-sm font-semibold text-slate-700 mb-2">
                                 Phone Number
                             </label>
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
+                            <input type="tel" id="phone" name="phone"
                                 class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 transition-all duration-200"
                                 placeholder="+91 1234567890">
                         </div>
@@ -264,11 +287,7 @@
                             <label for="organization" class="block text-sm font-semibold text-slate-700 mb-2">
                                 Institution/Organization <span class="text-red-500">*</span>
                             </label>
-                            <input
-                                type="text"
-                                id="organization"
-                                name="organization"
-                                required
+                            <input type="text" id="organization" name="organization" required
                                 class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 transition-all duration-200"
                                 placeholder="ABC University">
                         </div>
@@ -279,10 +298,7 @@
                         <label for="subject" class="block text-sm font-semibold text-slate-700 mb-2">
                             Subject <span class="text-red-500">*</span>
                         </label>
-                        <select
-                            id="subject"
-                            name="subject"
-                            required
+                        <select id="subject" name="subject" required
                             class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 transition-all duration-200">
                             <option value="">Select a subject</option>
                             <option value="partnership">Academic Partnership Inquiry</option>
@@ -298,11 +314,7 @@
                         <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">
                             Message <span class="text-red-500">*</span>
                         </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="6"
+                        <textarea id="message" name="message" required rows="6"
                             class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 transition-all duration-200 resize-none"
                             placeholder="Tell us about your institution and how we can help..."></textarea>
                     </div>
@@ -312,8 +324,7 @@
                         <p class="text-sm text-slate-500">
                             <span class="text-red-500">*</span> Required fields
                         </p>
-                        <button
-                            type="submit"
+                        <button type="submit"
                             class="inline-flex items-center gap-2 px-8 py-3 bg-brand-primary text-white font-semibold rounded-lg shadow-soft hover:bg-teal-900 transition-all duration-300 hover:scale-105">
                             <span>Send Message</span>
                             <i class="fa-solid fa-paper-plane"></i>
@@ -327,7 +338,8 @@
                         <i class="fa-solid fa-circle-check text-2xl text-green-500"></i>
                         <div>
                             <h4 class="font-bold text-green-900">Message Sent Successfully!</h4>
-                            <p class="text-sm text-green-700 mt-1">Thank you for reaching out. We'll get back to you within 24-48 hours.</p>
+                            <p class="text-sm text-green-700 mt-1">Thank you for reaching out. We'll get back to you
+                                within 24-48 hours.</p>
                         </div>
                     </div>
                 </div>
@@ -340,7 +352,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="font-serif text-3xl font-bold text-brand-dark mb-4">Why Partner With Us?</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">We bring real-world industry experience directly to your students</p>
+                <p class="text-slate-600 max-w-2xl mx-auto">We bring real-world industry experience directly to your
+                    students</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -386,7 +399,7 @@
     <!-- CTA Banner -->
     <section class="py-16 bg-brand-primary relative overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-        
+
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="font-serif text-2xl md:text-3xl font-bold text-white mb-4">
                 Ready to Transform Your Students' Futures?
@@ -410,12 +423,14 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <a href="index.html" class="flex items-center gap-2">
                 <div class="w-6 h-6 bg-slate-800 rounded-sm flex items-center justify-center text-white text-xs">
                     <i class="fa-solid fa-landmark"></i>
                 </div>
-                <span class="font-serif font-bold text-slate-800">Campus To  <span class="text-brand-primary">Corporate</span></span>
+                <span class="font-serif font-bold text-slate-800">Campus To <span
+                        class="text-brand-primary">Corporate</span></span>
             </a>
 
             <div class="text-slate-500 text-sm">
@@ -423,8 +438,12 @@
             </div>
 
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/ankitgdotin/" class="text-slate-400 hover:text-brand-primary transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
-                <a href="mailto:initiative@xaltiq.com" class="text-slate-400 hover:text-brand-primary transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
+                <a href="https://www.linkedin.com/in/ankitgdotin/"
+                    class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                        class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="mailto:initiative@xaltiq.com"
+                    class="text-slate-400 hover:text-brand-primary transition-colors"><i
+                        class="fa-solid fa-envelope text-xl"></i></a>
             </div>
         </div>
     </footer>
@@ -456,30 +475,46 @@
             const contactForm = document.getElementById('contactForm');
             const successMessage = document.getElementById('successMessage');
 
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                
-                // Simulate form submission (in production, this would send to a server)
+
                 const submitButton = contactForm.querySelector('button[type="submit"]');
                 const originalText = submitButton.innerHTML;
-                
+
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const organization = document.getElementById('organization').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                // Construct email body
+                const body = `Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Organization: ${organization}
+Subject: ${subject}
+
+Message:
+${message}`;
+
                 // Show loading state
                 submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
-                
-                // Simulate API call
+                submitButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Opening Email Client...';
+
+                // Create and click mailto link
+                const mailtoLink = `mailto:initiative@xaltiq.com?subject=${encodeURIComponent('Inquiry: ' + subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoLink;
+
+                // Show success message immediately
                 setTimeout(() => {
-                    // Hide form
                     contactForm.style.display = 'none';
-                    
-                    // Show success message
                     successMessage.classList.remove('hidden');
                     successMessage.classList.add('success-pulse');
-                    
-                    // Scroll to success message
                     successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    
-                    // Reset form after 5 seconds (optional)
+
+                    // Reset after delay
                     setTimeout(() => {
                         contactForm.style.display = 'block';
                         successMessage.classList.add('hidden');
@@ -487,9 +522,26 @@
                         submitButton.disabled = false;
                         submitButton.innerHTML = originalText;
                     }, 5000);
-                }, 1500);
+                }, 1000);
             });
         });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btnIcon = document.querySelector('#mobile-menu-btn i');
+
+            menu.classList.toggle('hidden');
+
+            if (menu.classList.contains('hidden')) {
+                btnIcon.classList.remove('fa-xmark');
+                btnIcon.classList.add('fa-bars');
+            } else {
+                btnIcon.classList.remove('fa-bars');
+                btnIcon.classList.add('fa-xmark');
+            }
+        }
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMenu);
     </script>
 
 </body>
