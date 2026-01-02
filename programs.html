@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+
 
     <!-- Tailwind CSS (CDN for standalone file) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,38 +23,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-dark': '#0f172a',
-                        'brand-primary': '#115e59',
-                        'brand-accent': '#b45309',
-                        'brand-bg': '#f8fafc',
-                        'brand-surface': '#ffffff',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['IBM Plex Sans', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
-                    }
-                }
-            }
-        }
-    </script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+'brand-dark': '#0b1220',
+'brand-primary': '#0b5ed7',
+'brand-accent': '#0d6efd',
+'brand-bg': '#f8fafc',
+'brand-surface': '#ffffff',
+},
+fontFamily: {
+sans: ['Inter', 'sans-serif'],
+serif: ['Inter', 'sans-serif'],
+},
+}
+}
+}
+</script>
     <style>
         .bg-grid-pattern {
             background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
             background-size: 32px 32px;
         }
 
-        .hero-gradient {
-            background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%);
-        }
-
+       .hero-gradient {
+background: linear-gradient(135deg, #0b1220 0%, #0b5ed7 100%);
+}
         .opacity-0 {
             opacity: 0;
         }
@@ -171,13 +167,15 @@
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-6">
                     <i class="fa-solid fa-ship"></i> Case Study
                 </div>
-                <h1 class="font-serif text-4xl lg:text-6xl font-bold text-brand-dark leading-tight mb-6">
+                <h1 class="font-serif text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
                     Dexpo
                 </h1>
-                <p class="text-2xl font-serif italic text-brand-primary mb-6">
+                <p class="text-2xl font-serif italic text-teal-200 mb-6">
+
                     Enterprise Import/Export Business Operations Platform
                 </p>
-                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                <p class="text-lg text-slate-200 mb-8 leading-relaxed max-w-3xl mx-auto">
+
                     A comprehensive project showcase from the Industry Immersion Program, demonstrating real-world
                     enterprise application development, stakeholder management, and technical decision-making.
                 </p>
